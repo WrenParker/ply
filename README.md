@@ -1,3 +1,32 @@
+# Assignment #1
+## Overview
+Create a Key Word In Context (KWIC) index for any two chapters of an Icelandic saga
+available at www.sagadb.org other than chapters 1 and 2 of Egli&#39;s saga.
+
+This was done using the [PLY(python lex yacc) library](https://github.com/dabeaz/ply), and python scripting to format tables and sort indices. Instructions to download and configure are found below.
+
+## Additional Files
+
+- README.md - markdown file (edited)
+- WrenParkerIndex.py - Python source code
+- Chapter1.txt - Chapter 1 of *The Story of Hrafnkell, Frey's Priest*
+- Chapter3.txt - Chapter 3 of *The Story of Hrafnkell, Frey's Priest*
+- Chapter1.csv - Comma separated value file of the index of chapter 1
+- Chapter1_sorted.csv - Comma separated value file of the sorted index of chapter 1
+- Chapter3.csv - Comma separated value file of the index of chapter 3
+- Chapter3_sorted.csv - Comma separated value file of the sorted index of chapter 3
+
+## Installation Instructions
+
+0. Ensure python 3 and pip are installed
+1. Clone the repo
+	`$ git clone https://github.com/WrenParker/ply.git`
+2. Run the install script in project root
+	`py install.py`
+3. Run the WrenParkerIndex.py script
+	`py WrenParkerIndex.py`
+4. Profit
+
 # PLY (Python Lex-Yacc)
 
 Copyright (C) 2001-2020
@@ -10,12 +39,12 @@ met:
 
 * Redistributions of source code must retain the above copyright notice,
   this list of conditions and the following disclaimer.  
-* Redistributions in binary form must reproduce the above copyright notice, 
+* Redistributions in binary form must reproduce the above copyright notice,
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.  
 * Neither the name of the David Beazley or Dabeaz LLC may be used to
   endorse or promote products derived from this software without
-  specific prior written permission. 
+  specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
 "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -39,7 +68,7 @@ and yacc. Here are a few highlights:
     If you know how to use these tools in C, you will find PLY
     to be similar.
 
- -  PLY provides *very* extensive error reporting and diagnostic 
+ -  PLY provides *very* extensive error reporting and diagnostic
     information to assist in parser construction.  The original
     implementation was developed for instructional purposes.  As
     a result, the system tries to identify the most common types
@@ -48,21 +77,21 @@ and yacc. Here are a few highlights:
  -  PLY provides full support for empty productions, error recovery,
     precedence specifiers, and moderately ambiguous grammars.
 
- -  Parsing is based on LR-parsing which is fast, memory efficient, 
+ -  Parsing is based on LR-parsing which is fast, memory efficient,
     better suited to large grammars, and which has a number of nice
     properties when dealing with syntax errors and other parsing problems.
     Currently, PLY builds its parsing tables using the LALR(1)
     algorithm used in yacc.
 
  -  PLY uses Python introspection features to build lexers and parsers.  
-    This greatly simplifies the task of parser construction since it reduces 
-    the number of files and eliminates the need to run a separate lex/yacc 
+    This greatly simplifies the task of parser construction since it reduces
+    the number of files and eliminates the need to run a separate lex/yacc
     tool before running your program.
 
  -  PLY can be used to build parsers for "real" programming languages.
     Although it is not ultra-fast due to its Python implementation,
     PLY can be used to parse grammars consisting of several hundred
-    rules (as might be found for a language like C).  The lexer and LR 
+    rules (as might be found for a language like C).  The lexer and LR
     parser are also reasonably efficient when parsing typically
     sized programs.  People have used PLY to build parsers for
     C, C++, ADA, and other real programming languages.
@@ -91,7 +120,7 @@ import yacc
 If you wish, you can use the install.py script to install PLY into
 virtual environment.
 
-PLY has no third-party dependencies. 
+PLY has no third-party dependencies.
 
 The docs/ directory contains complete documentation on how to use
 the system.  Documentation available at https://ply.readthedocs.io
@@ -109,7 +138,7 @@ about any platform.
 
 Note: PLY does not support execution under `python -OO`.  It can be
 made to work in that mode, but you'll need to change the programming
-interface with a decorator.  See the documentation for details. 
+interface with a decorator.  See the documentation for details.
 
 Resources
 =========
@@ -138,7 +167,7 @@ suffered through about 25 different versions of these tools :-).
 
 The CHANGES file acknowledges those who have contributed patches.
 
-Elias Ioup did the first implementation of LALR(1) parsing in PLY-1.x. 
+Elias Ioup did the first implementation of LALR(1) parsing in PLY-1.x.
 Andrew Waters and Markus Schoepflin were instrumental in reporting bugs
 and testing a revised LALR(1) implementation for PLY-2.0.
 
@@ -270,14 +299,5 @@ Take a Class!
 If you'd like to learn more about compiler principles and have a go at
 implementing a compiler, come take a course.
 https://www.dabeaz.com/compiler.html.
- 
+
 -- Dave
-
-
-
-
-
-
-
-
-
