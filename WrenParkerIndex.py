@@ -31,7 +31,7 @@ def buildTable(table, chapterNum, sorted=False):
     print('|---------------------|--------|-----|-----------------------------------------------|-----------------------------------------------|')
     print('|Current Word         |Chapter#|Index|Previous 5 Words                               |Following 5 Words                              |')
 
-    with open('./Chapter'+str(chapterNum)+("_sorted" if sorted else "")+'.csv', 'w', newline='\n') as csvfile:
+    with open('./output/Chapter'+str(chapterNum)+("_sorted" if sorted else "")+'.csv', 'w', newline='\n') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',',
                             quotechar='\"', quoting=csv.QUOTE_MINIMAL)
         for entry in table:
@@ -85,7 +85,7 @@ def tokenize(chapter):
     return arr
 
 table = list()
-firstChapter = tokenize('Chapter1.txt')
+firstChapter = tokenize('./chapters/Chapter1.txt')
 for pos in range(len(firstChapter)):
     table.append({firstChapter[pos]: {'index': pos,'precedingWords': generatePrecedingWords(pos, firstChapter),'antecedingWords': generateAntecedingWords(pos, firstChapter)}})
 
@@ -94,7 +94,7 @@ print("\n\n")
 buildTable(sorted(table, key= lambda entry : list(entry.keys())[0].lower()),1, True)
 
 table = list()
-secondChapter = tokenize('Chapter3.txt')
+secondChapter = tokenize('./chapters/Chapter3.txt')
 for pos in range(len(secondChapter)):
     table.append({secondChapter[pos]: {'index': pos,'precedingWords': generatePrecedingWords(pos, secondChapter),'antecedingWords': generateAntecedingWords(pos, secondChapter)}})
 
