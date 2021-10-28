@@ -31,7 +31,7 @@ def buildTable(table, chapterNum, sorted=False):
     print('|---------------------|--------|-----|-----------------------------------------------|-----------------------------------------------|')
     print('|Current Word         |Chapter#|Index|Previous 5 Words                               |Following 5 Words                              |')
 
-    with open('.OUT/Chapter'+str(chapterNum)+("_sorted" if sorted else "")+'.csv', 'w', newline='\n') as csvfile:
+    with open('./Chapter'+str(chapterNum)+("_sorted" if sorted else "")+'.csv', 'w', newline='\n') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',',
                             quotechar='\"', quoting=csv.QUOTE_MINIMAL)
         for entry in table:
