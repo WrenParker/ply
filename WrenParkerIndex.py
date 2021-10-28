@@ -45,7 +45,7 @@ def buildTable(table, chapterNum, sorted=False):
                     print(" ", end="")
             print("|", end=" ")
 
-            print("2", end=" ")
+            print(chapterNum, end=" ")
             print("     |", end=" ")
 
             print(entry[key]['index'], end=" ")
