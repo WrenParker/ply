@@ -9,12 +9,15 @@ This was done using the [PLY(python lex yacc) library](https://github.com/dabeaz
 
 - README.md - markdown file (edited)
 - WrenParkerIndex.py - Python source code
-- Chapter1.txt - Chapter 1 of *The Story of Hrafnkell, Frey's Priest*
-- Chapter3.txt - Chapter 3 of *The Story of Hrafnkell, Frey's Priest*
-- Chapter1.csv - Comma separated value file of the index of chapter 1
-- Chapter1_sorted.csv - Comma separated value file of the sorted index of chapter 1
-- Chapter3.csv - Comma separated value file of the index of chapter 3
-- Chapter3_sorted.csv - Comma separated value file of the sorted index of chapter 3
+- chapters/Chapter1.txt - Chapter 1 of *The Story of Hrafnkell, Frey's Priest*
+- chapters/Chapter3.txt - Chapter 3 of *The Story of Hrafnkell, Frey's Priest*
+- output/Chapter1.csv - Comma separated value file of the index of chapter 1
+- output/Chapter1_sorted.csv - Comma separated value file of the sorted index of chapter 1
+- output/Chapter3.csv - Comma separated value file of the index of chapter 3
+- output/Chapter3_sorted.csv - Comma separated value file of the sorted index of chapter 3
+- example screenshots/example_screenshot1.png - Example screenshot of the terminal output for chapter 3
+- example screenshots/example_screenshot2.png - Example screenshot of the terminal output for chapter 3 sorted
+
 
 ## Installation Instructions
 
