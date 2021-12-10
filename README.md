@@ -3,12 +3,26 @@
 Create a Key Word In Context (KWIC) index for any two chapters of an Icelandic saga
 available at www.sagadb.org other than chapters 1 and 2 of Egli&#39;s saga.
 
+# Assignment #2
+## Overview
+This assignment is to use the software package yacc or equivalent. There are two parts to the
+assignment. The assignment is based on a simplified version of the assignment statement in the COBOL
+language. In part one you are to design a grammar for a small subset of legal assignment statements in
+COBOL. You are to turn in your grammar as a separate file attached to the email you send to turn in the
+assignment. In part 2, you are to read a provided file of assignment statements, use Yacc and possible
+other code to INTERPRET the assignment statements and then print a list of final values of all of the
+identifiers in the program. You may assume that the only identifiers in this subset of COBOL are these 5:
+A, B, C, D, and E. You may also assume that there are only two arithmetic operators: addition and
+subtraction. Parentheses are allowed worth their usual meaning.
+
 This was done using the [PLY(python lex yacc) library](https://github.com/dabeaz/ply), and python scripting to format tables and sort indices. Instructions to download and configure are found below.
 
 ## Additional Files
 
 - README.md - markdown file (edited)
-- WrenParkerIndex.py - Python source code
+
+### Program #1
+- WrenParkerIndex.py - Python source code for the chapter index'r
 - chapters/Chapter1.txt - Chapter 1 of *The Story of Hrafnkell, Frey's Priest*
 - chapters/Chapter3.txt - Chapter 3 of *The Story of Hrafnkell, Frey's Priest*
 - output/Chapter1.csv - Comma separated value file of the index of chapter 1
@@ -18,6 +32,9 @@ This was done using the [PLY(python lex yacc) library](https://github.com/dabeaz
 - example screenshots/example_screenshot1.png - Example screenshot of the terminal output for chapter 3
 - example screenshots/example_screenshot2.png - Example screenshot of the terminal output for chapter 3 sorted
 
+### Program #2
+- WrenParkerCalc.py - Python source code for the calculat'r
+- grammar.txt - the grammars for the calculator (also can be found in the source code to see how they're used)
 
 ## Installation Instructions
 
@@ -26,9 +43,16 @@ This was done using the [PLY(python lex yacc) library](https://github.com/dabeaz
 	`$ git clone https://github.com/WrenParker/ply.git`
 2. Run the install script in project root
 	`py install.py`
-3. Run the WrenParkerIndex.py script
+
+## To run Assignment #1
+0. Run the WrenParkerIndex.py script
 	`py WrenParkerIndex.py`
-4. Profit
+1. Profit
+
+## To run Assignment #2
+0. Run the WrenParkerCalc.py script
+	`py WrenParkerCalc.py`
+1. Profit
 
 # PLY (Python Lex-Yacc)
 
