@@ -29,12 +29,16 @@ This was done using the [PLY(python lex yacc) library](https://github.com/dabeaz
 - output/Chapter1_sorted.csv - Comma separated value file of the sorted index of chapter 1
 - output/Chapter3.csv - Comma separated value file of the index of chapter 3
 - output/Chapter3_sorted.csv - Comma separated value file of the sorted index of chapter 3
-- example screenshots/example_screenshot1.png - Example screenshot of the terminal output for chapter 3
-- example screenshots/example_screenshot2.png - Example screenshot of the terminal output for chapter 3 sorted
+- example screenshots/Assignment1_example_screenshot1.png - Example screenshot of the terminal output for chapter 3
+- example screenshots/Assignment1_example_screenshot2.png - Example screenshot of the terminal output for chapter 3 sorted
+- Assignment Documents/assign01-CS410-2020lexkwiciselandicsaga.doc - Given description for Assignment 1
 
 ### Program #2
 - WrenParkerCalc.py - Python source code for the calculat'r
 - grammar.txt - the grammars for the calculator (also can be found in the source code to see how they're used)
+- example screenshots/Assignment2_part1.png - Shows the Results of the example given for part 1
+- example screenshots/Assignment2_part2.png - Shows the Results of the example given for part 2
+- Assignment Documents/CS410programmingassgnment2yaccandCOBOLarithmeticexpressions.odt - Given description for Assignment 2
 
 ## Installation Instructions
 
@@ -47,13 +51,14 @@ This was done using the [PLY(python lex yacc) library](https://github.com/dabeaz
 ## To run Assignment #1
 0. Run the WrenParkerIndex.py script
 	`py WrenParkerIndex.py`
-1. Profit
+1. To change the input, modify the input file on lines 88 & 97. Shouldn't be needed as both chapters print out unsorted and sorted in the order of 1, 1sorted, 3, 3sorted.
 
 ## To run Assignment #2
 0. Run the WrenParkerCalc.py script
 	`py WrenParkerCalc.py`
-1. Profit
+1. Enter in any desired input as described in the assignment 2 document (./Assignment Documents/assign01-CS410-2020lexkwiciselandicsaga.doc)
 
+# Original Project
 # PLY (Python Lex-Yacc)
 
 Copyright (C) 2001-2020
